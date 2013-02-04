@@ -1,0 +1,129 @@
+HTML/CSS
+
+In CSS pattern matching rules determine which styles to apply to elemts in the DOM
+http://www.w3.org/TR/CSS21/selector.html
+
+These include 
+
+Type selectors
+
+------------------------
+body
+{
+width:40px;
+}
+------------------------
+
+the universal type selector
+
+*
+{
+width:40px;
+}
+
+this means the style applys to all elements in the DOM.
+
+this means 
+
+class selector
+
+.className
+{
+width:40px;
+}
+
+you can consider a "silent" * here as
+
+*.className
+{
+...
+}
+
+and 
+
+.className
+{
+width:40px;
+}
+
+are equivalent.
+
+you can combine type and class selectors
+
+div.fancy
+{
+...
+}
+will match all divs with the class fancy
+
+note that an element can use 2 different classes
+e.g <div class="class1 class2" />
+
+Child
+    An element A is called the child of element B if and only if B is the parent of A. 
+Descendant
+    An element A is called a descendant of an element B, if either (1) A is a child of B, or (2) A is the child of some element C that is a descendant of B.
+
+Descendant selectors 
+
+You may want to match an element that is the descendant of another element in the tree. For example match the p elements that are contained by section elements
+
+this can be acheived by using white space
+section p
+{
+color:red;
+}
+
+Child selectors 
+
+You may want to match an element that is the child of another element in the tree.For example match the p elements that are children of section elements
+
+this can be acheived by 
+section > p
+{
+color:red;
+}
+
+ID selector
+
+#id1
+{
+...
+}
+matches all elements with id. These ids should be unique.
+
+//------------------------------
+
+properties
+
+color
+
+colors can have a shorthand property
+
+p 
+{
+color: #fff
+}
+
+is equivalent to
+p
+{
+color:#ffffff
+}
+
+This hex digits are identified in pairs.
+
+Box model of css.
+
+From outmost to innermost
+
+Offset-Margin-Border-Padding-Content
+
+
+
+
+Dependent on the CSS property definition setting properties on a parent element will cause the child element to inherit those properties.
+
+
+http://www.w3.org/TR/CSS21/about.html#property-defs
+http://www.w3.org/TR/CSS21/about.html#property-defs
