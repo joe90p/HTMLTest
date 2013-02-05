@@ -1,0 +1,24 @@
+﻿Positioning
+
+#id01
+{
+position: absolute;
+top:25px;
+left:50px;
+z-index:0;
+}
+
+#id02
+{
+position: relative;
+top:25px;
+left:50px;
+z-index:1;
+}
+
+Absolute positioning positions the elements with starting point of the top left corner of the containing element.
+
+Relative positioning has the starting point of the original unmodified starting point of the element.
+
+Flexbox - 
+gives control over child elements

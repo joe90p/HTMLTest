@@ -1,0 +1,27 @@
+﻿body {
+}
+
+
+.flexbox #flexbox1 {
+    margin-top: 20px;
+    display: -ms-flexbox;
+    width: 100%;
+    -ms-flex-pack: distribute;
+    border: 1px solid gray;
+}
+
+.flexbox #flexbox1 > div { min-width: 80px; min-height: 80px}
+.flexbox #flexbox1 > div:nth-child(1) { background-color: red;}
+.flexbox #flexbox1 > div:nth-child(2) { background-color: green;}
+.flexbox #flexbox1 > div:nth-child(3) { background-color: blue;}
+
+.flexbox #flexbox2 {
+    margin-top: 20px;
+    display: -ms-flexbox;
+    border: 1px solid gray;
+}
+
+.flexbox #flexbox2 > div { min-width: 80px; min-height: 80px}
+.flexbox #flexbox2 > div:nth-child(1) { background-color: red;-ms-flex: 1 0 auto;}
+.flexbox #flexbox2 > div:nth-child(2) { background-color: green; -ms-flex: 2 0 auto;}
+.flexbox #flexbox2 > div:nth-child(3) { background-color: blue; -ms-flex: 3 0 auto;}

@@ -57,8 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdvancedLayoutNotes.txt" />
     <Content Include="CanvasScript.js" />
-    <Content Include="HTML notes.txt" />
+    <Content Include="CSSNotes.txt" />
+    <Content Include="Flexbox.html" />
+    <Content Include="FlexboxStyle.css" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
