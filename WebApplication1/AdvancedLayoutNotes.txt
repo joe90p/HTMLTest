@@ -21,4 +21,34 @@ Absolute positioning positions the elements with starting point of the top left 
 Relative positioning has the starting point of the original unmodified starting point of the element.
 
 Flexbox - 
-gives control over child elements
+gives control over child elements.
+
+See Flexbox styles for examples.
+
+To change a div to a flexbox change display property to display: -ms-flexbox. we can also specify a packing for each of the children
+within the flexbox.
+
+
+
+
+start - bunches all children to the start. May have the effect of bunching to the left.
+
+end - bunches all children to the start. May have the effect of bunching to the left.
+center - bunches al children to center.
+justify/distribute - evenly distributes the children
+
+------------------
+
+We can also endow the actual children with flex-box properties e.g -ms-flex
+
+-ms-flex: [relative size] [recomeended size]
+
+--------------
+
+We can also endow the enclosing flexbox with a wrapping property. -ms-flex-wrap: wrap;
+
+--------------------------------
+----------------------------------
+Grid
+
+

@@ -6,7 +6,7 @@
     margin-top: 20px;
     display: -ms-flexbox;
     width: 100%;
-    -ms-flex-pack: distribute;
+    -ms-flex-pack: end;
     border: 1px solid gray;
 }
 
@@ -22,6 +22,37 @@
 }
 
 .flexbox #flexbox2 > div { min-width: 80px; min-height: 80px}
-.flexbox #flexbox2 > div:nth-child(1) { background-color: red;-ms-flex: 1 0 auto;}
-.flexbox #flexbox2 > div:nth-child(2) { background-color: green; -ms-flex: 2 0 auto;}
-.flexbox #flexbox2 > div:nth-child(3) { background-color: blue; -ms-flex: 3 0 auto;}
+.flexbox #flexbox2 > div:nth-child(1) 
+{ 
+    background-color: red;
+    -ms-flex: 1 0 auto;
+
+}
+.flexbox #flexbox2 > div:nth-child(2) 
+{ 
+    background-color: green; 
+    -ms-flex: 2 0 auto;
+
+}
+.flexbox #flexbox2 > div:nth-child(3) { 
+    background-color: blue; 
+     -ms-flex: 3 0 auto;
+
+}
+
+.flexbox #wrapFlexBox {
+    margin-top: 20px;
+    display: -ms-flexbox;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+}
+
+.flexbox #wrapFlexBox > div 
+{
+     min-width: 80px;
+    min-height: 80px;
+    background-color: gray;
+    margin: 5px;
+    font-size: 60px;
+    padding: 115px;
+}
