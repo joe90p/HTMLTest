@@ -51,4 +51,41 @@ We can also endow the enclosing flexbox with a wrapping property. -ms-flex-wrap:
 ----------------------------------
 Grid
 
+Grids are used for absolute positioning of children. They are similar to using tables for layout. They are specified in CSS
+however rather than specific elements ie table, td, tr etc.
 
+This relies on having an outer container which acts as the grid container. You can then arrange all child elements in a grid fashion.
+This div is the container
+#simple > div {
+display:-ms-grid;
+-ms-grid-columns: 250px 250px;
+-ms-grid-rows: 250px 250px;
+}
+
+#simple > div > div:nth-child(2) {
+display:-ms-grid;
+-ms-grid-columns: 2;
+-ms-grid-rows: 1;
+}
+
+Note tht the default values for -ms-grid-columns and -ms-grid-rows are 1.
+
+A column or row width can be defined using the fr unit. fr stands for fraction.
+
+#fancy > div {
+display:-ms-grid;
+-ms-grid-columns: 250px 1fr 2fr 250px;
+-ms-grid-rows: 250px 1fr 250px;
+width: 800px;
+height:600px;
+}
+
+In this example there are 4 columns. The first and last have width 250px the middle two have 1 * (800 - 250*2)/3 and 2 * (800 - 250*2)/3 (100 and 200)
+There are 3 rows The first and last have width 250px the middle one has 1 * (600-250*2)/1 note that this would be the same irrespeoective of the fr value
+ie  n * (600-250*2)/n.
+
+-------------------------------
+-------------------------------
+Transforms
+
+Affect an element and it's children
