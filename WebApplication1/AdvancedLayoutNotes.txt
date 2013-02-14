@@ -89,3 +89,23 @@ ie  n * (600-250*2)/n.
 Transforms
 
 Affect an element and it's children
+
+e.g #thingy:hover {
+    transform: scale(2) translate(50px,50px) rotate(10deg);
+}
+
+-------------------------------
+-------------------------------
+Transitions
+
+Apply the transition property to determine the change behaviour when a property value is changed. 
+The below says for all properties trabsition them in 1s. We can also specify the names of specific properties instead of all.
+e.g
+
+#thingy {
+    transition: all 1s;
+}
+
+ #thingy:hover {
+    transform: scale(2) translate(50px,50px) rotate(10deg);
+}

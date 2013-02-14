@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdvancedLayoutNotes.txt" />
+    <Content Include="Animation.css" />
+    <Content Include="Animation.html" />
     <Content Include="CanvasScript.js" />
     <Content Include="CSSNotes.txt" />
     <Content Include="Flexbox.html" />
