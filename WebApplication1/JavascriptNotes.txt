@@ -1,0 +1,51 @@
+﻿Function hoisting - A function can be called from a place n code before it ois actually defined, it is hoisted.
+
+Although a function may be defined to take no arguments you can call a function with many arguments and the compiler will not complain.
+These arguments are available through the "arguments" local variable in the function.
+
+Functions can return nothing (void equivalent in c#) or return something, take none or many arguments
+
+function()
+{
+}
+
+function()
+{
+return something;
+}
+
+function(arg1, arg2)
+{
+}
+
+----------------------------
+Immediate functions
+
+are functions which are executed at the same time as they are evaluated.
+
+They are declared like this
+(function() { ... } () );
+OR
+(function() { ... }) ();
+
+----------------------
+
+
+Arrays
+
+can be declared like
+
+var x = [];
+var y = ["apple", "banana", "coconut", "durian", "elderberry"];
+var z = ["a", 1, 0.1, {}];
+
+some arra functions
+
+slice
+
+y.slice(0,1) = ["apple"];
+y.slice(1,3) = ["banana", "coconut"];
+
+splice ( amutable function, ie it changes the array it also return the stuff taken from the array)
+
+y.splice(

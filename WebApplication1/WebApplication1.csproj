@@ -67,6 +67,9 @@
     <Content Include="Grid.css" />
     <Content Include="Grid.html" />
     <Content Include="index.html" />
+    <Content Include="JavascriptNotes.txt" />
+    <Content Include="JS.html" />
+    <Content Include="js1.js" />
     <Content Include="Transitions.css" />
     <Content Include="Transitions.html" />
     <Content Include="Web.config" />
