@@ -1,0 +1,69 @@
+﻿The W£c DOM is a language neutral interface that allows scripts/programs to dynamically access and update the content structure and style of a docment.
+
+The HTML DOM defines the 
+	objects and properties for all HTML elements
+	and methods to access them
+
+HTML elements can also be deleted via the DOM.
+
+The HTML DOM can be accessed with JavaScript.
+
+All HTML elements are defined as objects. . The top level document node is an object called document and is available in the global namespace.
+
+DOM Querying
+
+These methods are avilable on DOM objects
+
+getElemetById - retrieves an element by it's id.
+
+getElemenstByTagName - retreives multiple elements with a partigular tag. For example
+
+<body>
+    <div id="parent">
+        <div id="child" >
+            <div id="grandchild" />
+        </div>
+    </div>
+    <span />
+</body>
+
+----------
+
+$(document).ready(start);
+
+function start() {
+    var docDivs= document.getElementsByTagName("div");
+    var parentDivs = document.getElementById("parent").getElementsByTagName("div");
+}
+
+for example docDivs conatins 3 elements parent Divs contains 2 elements.
+
+querySelector - retrieves the first element with the matching element selector. The selectors are the 
+same format as the css selectors ie #idName .className
+
+querySelectorAll - retrieves all elements with the matching element selector. The selectors are the 
+same format as the css selectors ie #idName .className
+
+
+
+<body>
+    <div id="parent">
+        <div id="child">
+            <div id="grandchild">
+                <div id="baby" />
+            </div>
+        </div>
+    </div>
+</body>
+
+----------
+
+function start() {
+    var firstDescendantDiv = document.querySelector("#child div");
+    var someDescendantDivs = document.querySelectorAll("#child div");
+}
+
+
+for example firstDescendantDiv has a value corresponding to the div with id grandchild, someDescendantDivs is an array containing
+the divs with ids grandchild and baby.
+

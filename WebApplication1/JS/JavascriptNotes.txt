@@ -46,6 +46,49 @@ slice
 y.slice(0,1) = ["apple"];
 y.slice(1,3) = ["banana", "coconut"];
 
-splice ( amutable function, ie it changes the array it also return the stuff taken from the array)
+splice ( a mutable function, ie it changes the array it also return the stuff taken from the array)
 
-y.splice(
+y.splice(1,3) = ["banana", "coconut", "durian"]
+and y = ["apple", "elderberry"]
+
+map 
+
+is a projection equivalent to the Select extension method in LINQ.
+
+filter
+
+is the the equivalent to the Where LINQ extension method.
+
+every
+
+is the equivalent of LINQ All
+
+some 
+
+is the equivalent of LINQ Any
+
+-------------------------
+-------------------------
+
+objects
+
+objects can be declared with curly braces
+
+var cat = {};
+cat.breed = "Persian";
+bat.makeSound = function() { alert("miaow");};
+
+we can add properties at any time to the object
+
+we can also use the object initializer syntax
+
+var cat = {
+breed: "Persian",
+makeSound: function() { alert("miaow");}
+};
+
+we can also put quotes around the members
+var cat = {
+"breed": "Persian",
+"makeSound": function() { alert("miaow");}
+};
